@@ -1,0 +1,23 @@
+body {
+   background-color:rgb(225, 237, 244);
+}
+
+/* HEADER */
+
+.navbar-titles {
+   list-style: none;
+   padding-left: 0;
+}
+
+/* MAIN */
+
+.breadtext {
+   color: rgb(25, 161, 166); 
+}
+
+#contact-options
+{
+   list-style: none;
+}
+
+/* FOOTER */
