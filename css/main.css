@@ -11,8 +11,12 @@ body {
 
 /* MAIN */
 
-.breadtext {
+.special-text {
    color: rgb(25, 161, 166); 
+}
+
+.header-one {
+   color: rgb(42, 117, 112);
 }
 
 #contact-options
