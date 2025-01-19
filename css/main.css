@@ -24,4 +24,14 @@ body {
    list-style: none;
 }
 
+/* IMAGES */
+
+.image-links {
+   width: 30%;
+}
+
+.image-collections {
+   width: 30%;
+}
+
 /* FOOTER */
