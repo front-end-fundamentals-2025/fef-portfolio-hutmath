@@ -4,19 +4,42 @@ body {
 
 /* HEADER */
 
+header {
+   display: flex;
+   font-size: 1vw;
+}
+
 .navbar-titles {
    list-style: none;
-   padding-left: 0;
+   display: flex;
+}
+
+li {
+   margin-left: 5rem;
+   /* font-size: 1vw; */
 }
 
 /* MAIN */
 
 .special-text {
-   color: rgb(25, 161, 166); 
+   color: rgb(25, 161, 166);
 }
 
-.header-one {
+h1 {
    color: rgb(42, 117, 112);
+   font-size: 3vw;
+}
+
+h2 {
+   font-size: 2vw;
+}
+
+figcaption {
+   font-size: 1vw;
+}
+
+p {
+   font-size: 1vw;
 }
 
 #contact-options
@@ -34,4 +57,52 @@ body {
    width: 30%;
 }
 
-/* FOOTER */
+.image-projects {
+   width: 50%;
+}
+
+.fishnchips-images-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 10rem;
+}
+
+.fishnchips-images {
+   width: 70%;
+}
+
+/* RESPONSIVE GRID */
+
+
+@media screen and (max-width: 620px) {
+   header, .navbar-titles {
+      flex-direction: column;
+   }
+
+   li {
+      margin-left: 0;
+   }
+
+   ul {
+      margin-top: 0;
+   }
+}
+
+@media screen and (min-width: 620px) {
+   .projects-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3vh;
+      margin-left: 5%;
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   .projects-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: 25vh;
+      gap: 15vh;
+      margin-left: 5%;
+   }
+}
