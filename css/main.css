@@ -1,6 +1,4 @@
-body {
-   background-color:rgb(225, 237, 244);
-}
+/* FONTS */
 
 * {
      font-family: "Newsreader", serif;
@@ -13,6 +11,26 @@ body {
   font-weight: <weight>;
   font-style: normal;
 } */
+/* DARK MODE STYLE "SETTINGS" */
+
+.dark-mode-body {
+   background-color: #404050;
+   color: #f0ecf9;
+}
+
+.dark-mode-header {
+   background-color: rgb(36, 45, 53);
+   color: #f0ecf9;
+}
+
+/* MAIN */
+
+body {
+   background-color:rgb(255, 255, 255);
+   margin: 0;
+   font-size: 1vw;
+   color: #404050;
+}
 
 /* HEADER */
 
@@ -30,19 +48,21 @@ header {
    margin: 0 auto;
 }
 
+nav {
+   display: flex;
+   justify-content: space-between;
+}
+
 /* ul of nav */
 .navbar-list {
    list-style: none;
    display: flex;
 }
 
+/* the look & design of the links */
 .navbar-links {
    color: white;
    margin-left: 3rem;
-}
-
-body {
-   margin: 0;
 }
 
 @media screen and (max-width: 520px) {
@@ -61,14 +81,14 @@ body {
 
 /* MAIN */
 
-#small-animation {
+/* #small-animation {
 animation-name: gif-style;
 border-radius: 10%;
 animation-duration: 2.5s;
 animation-iteration-count: infinite;
 animation-timing-function: ease-in-out;
-}
-
+} */
+/* 
 @keyframes gif-style {
    0% {
       transform: scale(0.7);
@@ -89,7 +109,7 @@ animation-timing-function: ease-in-out;
    100% {
       transform: scale(0.7);
    }
-}
+} */
 
 
 .special-text {
@@ -99,17 +119,15 @@ animation-timing-function: ease-in-out;
 h1 {
    color: rgb(42, 117, 112);
    font-size: 3vw;
+   margin: 1%;
 }
 
 h2 {
    font-size: 2vw;
+   margin: 1%;
 }
 
 figcaption {
-   font-size: 1vw;
-}
-
-p {
    font-size: 1vw;
 }
 
@@ -156,4 +174,15 @@ p {
       grid-template-columns: 1fr 1fr 1fr;
       padding: 1em;
    }
+}
+
+/* FOOTER */
+
+footer {
+   display: flex;
+   justify-content: space-between;
+}
+
+#theme-button-container {
+   margin: 2%;
 }

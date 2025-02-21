@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathilda Hutching's Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link id="main-css-file" rel="stylesheet" href="css/main.css">
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
-        <a href="index.html"><p id="logo">Mathilda Hutchings' Portfolio</p></a>
         <nav>
+            <a href="index.html"><p id="logo">Mathilda Hutchings' Portfolio</p></a>
             <ul class="navbar-list">
                 <a class="navbar-links" href="index.html">
                     <li>Home</li>
@@ -36,13 +38,16 @@
             This page is developed by Mathilda Hutchings and shows the progress
             of her work within the coruse Front-End Fundamentals.
             The site was created on the second lesson (a lab session) of the course, on the third day after school start.
-        </p> <br />
-        <img id="small-animation" src="https://media1.tenor.com/m/g16jQZqbvWoAAAAd/yippee-happy.gif">
+        </p>
+        <!-- <img id="small-animation" src="https://media1.tenor.com/m/g16jQZqbvWoAAAAd/yippee-happy.gif"> -->
     </main>
     <footer>
         <p class="special-text">
             ©️ Mathilda's Portfolio 2025
         </p>
+        <div id="theme-button-container">
+            <button id="toggle-theme-button">Toggle theme</button>
+        </div>
     </footer>
 </body>
 </html>
